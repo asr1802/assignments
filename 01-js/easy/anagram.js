@@ -6,9 +6,10 @@
 
 function isAnagram(str1, str2) {
   console.log("String :" ,str1, str2)
-  arr1 = Array.from(str1.trim())
-  arr2 = Array.from(str2.trim())
+  arr1 = Array.from(str1.trim().toLowerCase())
+  arr2 = Array.from(str2.trim().toLowerCase())
   if (arr1.length == arr2.length){
+    console.log("Array :" ,arr1, arr2)
     // console.log("String 1 : ",str1.split(''))
     // console.log("String 1 : ",Object.assign([],str1))
     // console.log("String 1 : ",Array.from(str1))
@@ -31,6 +32,6 @@ function isAnagram(str1, str2) {
 
 }
 
-console.log(isAnagram("ten","net"))
+console.log(isAnagram('Debit Card', 'Bad Credit'))
 
 module.exports = isAnagram;
