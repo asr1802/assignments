@@ -32,6 +32,4 @@ function isAnagram(str1, str2) {
 
 }
 
-console.log(isAnagram('Debit Card', 'Bad Credit'))
-
 module.exports = isAnagram;
